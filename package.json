@@ -1,0 +1,23 @@
+{
+  "name": "planilha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelasds/planilha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelasds/planilha/issues"
+  },
+  "homepage": "https://github.com/rafaelasds/planilha#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
