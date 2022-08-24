@@ -1,0 +1,7 @@
+GET https://3000-rafaelasds-planilha-5lvhfr7te4h.ws-us63.gitpod.io/transacoes
+###
+
+POST https://3000-rafaelasds-planilha-5lvhfr7te4h.ws-us63.gitpod.io/transacoes
+content-type: application/json
+
+{"valor": 10}
