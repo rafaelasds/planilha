@@ -12,6 +12,7 @@ class SqlTransacoesRepositorio {
         }
     }
     async criarTransacao(transacao) {
+        console.log (transacao)
         const consulta = `INSERT INTO transacoes 
         (valor, descricao, categoria)
         VALUES ($1, $2, $3) RETURNING * `;

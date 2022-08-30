@@ -45,7 +45,7 @@ async function buscarTransacoes() {
   const response = await fetch('/transacoes');
   const financas = await response.json();
 
-  //setSaldo(financas.saldo);
+  setSaldo(financas.saldo);
   setTransacoes(financas.transacoes);
 }
 
@@ -76,7 +76,7 @@ async function adicionarDespesa() {
   const descricaoDespesa = window.prompt('Qual a descricao de sua despesa?');
   const valorDespesa = window.prompt('Qual o valor de sua despesa?');
 
-  await enviarDadosTransacao(descricaoDespesa, valorDespesa);
+  await enviarDadosTransacao(descricaoDespesa, valorDespesa,"Despesa");
 
   buscarTransacoes();
 }
@@ -85,7 +85,7 @@ async function adicionarReceita() {
   const descricaoReceita = window.prompt('Qual a descricao de sua receita?');
   const valorReceita = window.prompt('Qual o valor de sua receita?');
 
-  await enviarDadosTransacao(descricaoReceita, valorReceita);
+  await enviarDadosTransacao(descricaoReceita, valorReceita, "Receita");
 
   buscarTransacoes();
 }
